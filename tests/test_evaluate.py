@@ -5,7 +5,13 @@ from conftest import FakeClient, response, text, tool
 
 from sqlanalyst import cli
 from sqlanalyst.agent import Run, Step, ask
-from sqlanalyst.evaluate import Question, check_references, grade, load_questions, results_match
+from sqlanalyst.evaluate import (
+    Question,
+    check_references,
+    grade,
+    load_questions,
+    results_match,
+)
 
 QUESTIONS = Path(__file__).resolve().parents[1] / "examples" / "questions.jsonl"
 

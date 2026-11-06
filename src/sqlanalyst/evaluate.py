@@ -21,7 +21,7 @@ from pathlib import Path
 
 from .db import ReadOnlyDB
 
-CANT_ANSWER = re.compile(r"\b(not (?:available|included|in|tracked|recorded|possible)|no (?:data|information|table|column)|doesn'?t (?:have|contain|include|track)|does not (?:have|contain|include|track)|cannot|can'?t)\b", re.I)
+CANT_ANSWER = re.compile(r"\b(not (?:available|included|in|tracked|recorded|possible)|no (?:data|information|table|column)|doesn'?t (?:have|contain|include|track)|does not (?:have|contain|include|track)|cannot|can'?t)\b", re.IGNORECASE)
 
 
 @dataclass
